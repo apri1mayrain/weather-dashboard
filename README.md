@@ -37,7 +37,7 @@ Upon page load, the weather data will populate with the last search or "San Anto
 
 ## Deployment
 
-Visit the website: [Weather Dashboard](https://github.apri1mayrain.io/weather-dashboard)
+Visit the website: [Weather Dashboard](https://apri1mayrain.github.io/weather-dashboard/)
 
 ## Screenshot
 
