@@ -1,0 +1,116 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap');
+
+/* Universal style */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Archivo', sans-serif;
+}
+
+/* Background colors */
+body {
+    background: #f0f5ff;
+}
+
+header {
+    background: rgb(96, 162, 215);
+    background: linear-gradient(90deg, rgba(96, 162, 215, 1) 0%, rgba(163, 212, 247, 1) 15%, rgba(253, 208, 32, 0.7) 50%, rgba(163, 212, 247, 1) 85%, rgba(96, 162, 215, 1) 100%);
+}
+
+.weather-card {
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(224,234,255,1) 100%);
+}
+
+.humidity-card {
+    background: rgb(255, 195, 217);
+    background: radial-gradient(circle, rgba(255, 195, 217, 1) 0%, rgba(255, 121, 170, 1) 100%);
+}
+
+.wind-card {
+    background: rgb(217, 235, 178);
+    background: radial-gradient(circle, rgba(217, 235, 178, 1) 0%, rgba(190, 229, 104, 1) 100%);
+}
+
+.sun-card {
+    background: rgb(255, 224, 188);
+    background: radial-gradient(circle, rgba(255, 224, 188, 1) 0%, rgba(255, 182, 98, 1) 100%);
+}
+
+.forecast-card {
+    background: rgb(220, 232, 255);
+    background: radial-gradient(circle, rgba(220, 232, 255, 1) 0%, rgba(145, 182, 255, 1) 100%);
+}
+
+/* Image sizing */
+header img {
+    width: 90px;
+    height: 90px;
+}
+
+.card img {
+    width: 25px;
+    height: 25px;
+}
+
+#icon {
+    width: 100px;
+    height: 100px;
+    align-self: center;
+}
+
+.humidity-card img,
+.wind-card img {
+    width: 35px;
+    height: 35px;
+}
+
+.sun-card img {
+    width: 50px;
+    height: 50px;
+}
+
+.forecast-icon {
+    width: 60px !important;
+    height: 60px !important;
+    align-self: center;
+}
+
+/* Border styling */
+.border-gradient {
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+}
+
+.border-color {
+    border-image-source: linear-gradient(90deg, rgba(96, 162, 215, 1) 0%, rgba(163, 212, 247, 1) 15%, rgba(253, 208, 32, 0.7) 50%, rgba(163, 212, 247, 1) 85%, rgba(96, 162, 215, 1) 100%);
+}
+
+.border-size {
+    border-top: 6px solid !important;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    padding-top: 16px;
+}
+
+/* Align button with list */
+#clearBtn {
+    margin-left: .5rem;
+}
+
+/* Size down font for footer */
+footer p {
+    font-size: .8rem;
+}
+
+/* Set padding to zero for screens ≤ 425px */
+@media screen and (max-width: 425px) {
+    .row>* {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
